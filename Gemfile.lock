@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    getto-roda (0.1.0)
+    getto-roda (0.2.0)
       rack (~> 2.0)
       tzinfo (~> 1.1)
 
