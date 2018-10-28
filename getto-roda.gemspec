@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Roda helper}
   spec.description   = %q{The web app entry point helper}
-  spec.homepage      = "https://github.com/getto-systems/getto-roda"
+  spec.homepage      = "https://github.com/getto-systems/rubygems-getto-roda"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
