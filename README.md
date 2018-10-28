@@ -79,7 +79,7 @@ module MyApp
           params:  params,
           config:  config,
           account: account, # <= detect_account
-          sequel:  Sequel.connect(config.db),
+          sequel:  ::Sequel.connect(config.db),
         )
       end
 
