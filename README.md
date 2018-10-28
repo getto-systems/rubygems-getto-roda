@@ -168,7 +168,7 @@ params = Getto::Roda::Decode::Post.new("text/plain", '{"key":"value"}').to_h
 # => nil
 
 # decode get query string
-params = Getto::Roda::Decode::Get.new("key=value").to_h,
+params = Getto::Roda::Decode::Get.new("key=value").to_h
 # => {"key" => "value"}
 ```
 
