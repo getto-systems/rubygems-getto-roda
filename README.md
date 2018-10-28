@@ -29,6 +29,7 @@ require "getto/roda/entry_point"
 require "logger"
 require "exception_notifier"
 require "jwt"
+require "sequel"
 
 class AppError < RuntimeError
   extend Getto::Roda::HttpErrorHelper
