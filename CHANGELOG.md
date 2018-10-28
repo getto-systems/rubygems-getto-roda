@@ -1,3 +1,7 @@
+# Version : 1.1.1
+
+fix: metadata
+
 # Version : 1.1.0
 
 add: signature check when EntryPoint.new
