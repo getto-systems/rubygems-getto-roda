@@ -19,10 +19,28 @@ module Getto
         @config = config
         @params = params
 
-        @request_logger = request_logger
-        @exception_notifier = exception_notifier
+        @request_logger = check_signature(:request_logger, request_logger, [
+          :debug,
+          :info,
+          :warn,
+          :error,
+          :fatal,
+        ])
+        @exception_notifier = check_signature(:exception_notifier, exception_notifier, [
+          :notify_exception,
+        ])
 
         @logger = Getto::Roda::Logger.new
+      end
+
+      private def check_signature(name,obj,methods)
+        obj.tap{
+          methods.each do |method|
+            unless obj.respond_to?(method)
+              raise ArgumentError, "argument type error: #{name} is not respond_to #{method}"
+            end
+          end
+        }
       end
 
       attr_reader :error, :time,
