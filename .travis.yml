@@ -1,8 +1,12 @@
 sudo: false
 language: ruby
+cache: bundler
 rvm:
   - 2.5.1
 before_install: gem install bundler -v 1.16.2
+notifications:
+  slack:
+    secure: "ENacikvjYr4DEMzPsV6p/UKqhwSl8FXdmlZFA2liJBnWNtWnEN/HNp24YTZNkPYm9/rCsdOdmQ1+6k1eXv/LWEzhzx/VteENGKMfjEfSuSSWNNAWJ3n+eME2dV1vnwvz8v3tl+QgYb142h0hdXEvK4G1aKsinOPFvTwxiwnJq4UcSxuKJP3O1RqXOFGm7EiEeyt83JSV4svphO2qiBfCEGTpY8ZIFtFGpJu06U+Au7baw2x/XdFrf+u+1zoOS/pusDBk8cPCXooKl1Ks+FvearhEV2inkgeQGBCkBs8PgNs0zyO2B1VamIaGSMPEia/YmS21fS3+BOhUB1hNAsIHoDjLQKAvkaZMSAZ61sP2wYSuolNcMmshY+gZaktZKRvM1VIkyHmxG0+DG6l9YhK6elG2jRB3yWW9z2PglEJntFLAs0CPrWWJgrSXlx3XUtYxoKWLXPFo/iIT3ztREaRyIaRqT9c1nxrpPBVrqpFI7GEBNT6i2IC6n4XUzkJ//jn1VY7B2+vYHkDnpZs5Wmcnu8bq+vSe/XkhrQd4gmJQ/SulN4pJuqxwZjXu28o3QteIE4NpnCG7rNHZkjqaBInNcrMez56puDB49b7w3my1hedVLk8ZNTfhvHYmbOsOt339Pgc/b73xvUfZjQh/iLC1ax/8ZEgI/nWPitw3mvYHIqs="
 deploy:
   provider: rubygems
   gem: getto-roda
