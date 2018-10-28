@@ -161,7 +161,7 @@ config.key.roles  # => [:user, :system]
 config.key.config # => { path: :path, url: :url }
 ```
 
-# decode params
+### decode params
 
 ```ruby
 require "getto/roda/decode"
