@@ -4,6 +4,7 @@ require "getto/roda/logger"
 
 module Getto
   module Roda
+    # :nocov:
     class EntryPoint
       def initialize(
         error:, time_zone:,
@@ -131,5 +132,6 @@ module Getto
           }
         end
     end
+    # :nocov:
   end
 end
