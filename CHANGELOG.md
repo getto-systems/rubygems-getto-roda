@@ -1,3 +1,7 @@
+# Version : 1.1.2
+
+fix: travis
+
 # Version : 1.1.1
 
 fix: metadata
