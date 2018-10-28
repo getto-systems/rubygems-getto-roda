@@ -50,10 +50,17 @@ module MyApp
     #   ...
     #   end
     #
-    #   attr_reader :error, :time,
-    #     :app, :request,
-    #     :config, :params, :account,
-    #     :logger, :exception_notifier
+    #   attr_reader(
+    #     :app,     # => Roda app object
+    #     :request, # => Roda request object
+    #     :error,
+    #     :config,
+    #     :params,
+    #     :account,
+    #     :exception_notifier,
+    #     :time,   # => Getto::Time
+    #     :logger, # => Getto::Logger
+    #   )
 
     def initialize(config:, **args)
       super(
